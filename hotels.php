@@ -70,8 +70,8 @@
                 <label for="parking">Parcheggio disponibile</label>
                 <select name="parking" id="parking" class="form-control">
                     <option value="">Tutti gli hotel</option>
-                    <option value="1" <?php if (isset($_GET['parking']) && $_GET['parking'] == 1) ; ?>>Con parcheggio</option>
-                    <option value="0" <?php if (isset($_GET['parking']) && $_GET['parking'] == 0) ; ?>>Senza parcheggio</option>
+                    <option value="1" <?php if (isset($_GET['parking']) && $_GET['parking'] == 1) echo 'selected'; ?>>Con parcheggio</option>
+                    <option value="0" <?php if (isset($_GET['parking']) && $_GET['parking'] == 0) echo 'selected'; ?>>Senza parcheggio</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary mb-2">Filtra</button>
